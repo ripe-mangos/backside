@@ -1,0 +1,12 @@
+script = {
+  SOI ~
+  script_info
+}
+
+script_info = {
+  "[Script Info]" ~ NEWLINE ~
+}
+styles = {
+  "[" ~ ("v4 Styles" | "v4 Styles+") ~ "]" ~ NEWLINE ~
+
+}
