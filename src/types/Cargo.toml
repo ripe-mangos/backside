@@ -1,0 +1,9 @@
+[package]
+name = "backside_types"
+version.workspace = true
+edition = "2021"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]

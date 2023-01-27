@@ -1,0 +1,10 @@
+[package]
+name = "backside_parser"
+version.workspace = true
+edition = "2021"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+backside_types = { version = "0.1.0", path = "../types" }
