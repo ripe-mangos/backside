@@ -1,0 +1,38 @@
+[package]
+name = "backside"
+version = "0.1.0"
+license = "MIT OR Apache-2.0 OR ISC"
+edition = "2021"
+
+[dependencies]
+backside_parser = { version = "0.1.0", path = "src/parser" }
+
+[features]
+default = ["rw", "pull"]
+full = ["rw", "oneshot", "pull"]
+
+rw = ["read", "write"]
+read  = []
+write = []
+
+oneshot = []
+pull    = []
+
+[lib]
+name = "backside"
+path = "src/lib.rs"
+
+[[bin]]
+name = "backside-cli"
+path = "src/cli/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
+
+[workspace]
+members = ["src/parser", "src/writer", "src/types"]
+
+[workspace.package]
+version = "0.1.0"
