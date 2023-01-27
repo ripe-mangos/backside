@@ -1,14 +1,8 @@
 
-# `ass.rs`
+# Backside
 
-A *complete* replacement for libass written in Rust.
+A replacement for libass written in Rust.
 
-```rust
-extern crate ass
+---
 
-use ass::Parser;
-
-fn main() {
-    Parser::parse_styles()
-}
-```
+This is an old project I partly revived a little more recently. It's a mess, but if you want to copy my code, please do.
