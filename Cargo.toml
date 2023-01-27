@@ -1,7 +1,7 @@
 [package]
 name = "backside"
 version = "0.1.0"
-license = "MIT OR Apache-2.0 OR ISC"
+license = "WTFPL"
 edition = "2021"
 
 [dependencies]
